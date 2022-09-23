@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class FindingsLists {
     public FindingsLists () throws InterruptedException {
         Thread.sleep(500);
-        System.out.println("Welcome back from your expedition. Time to catalog everything you found");
+        System.out.println("\nWelcome back from your expedition. Time to catalog everything you found");
         ArrayList<String> rockList = new ArrayList<>();
-        System.out.println("Rock data downloaded.");
+        System.out.println("\nRock data downloaded.");
 
         rockList.add("rock");
         rockList.add("weird rock");
@@ -17,12 +17,12 @@ public class FindingsLists {
 
         System.out.println(rockList);
 
-        System.out.println("Wait a second that last on is not a rock we need to delete that one from the list.");
+        System.out.println("\nWait a second that last on is not a rock we need to delete that one from the list.");
 
         rockList.remove("not rock");
         System.out.println(rockList);
 
-        System.out.println("Perfect");
+        System.out.println("\nPerfect");
 
         Thread.sleep(500);
 
@@ -36,6 +36,7 @@ public class FindingsLists {
         fossilDirectory.put("Tooth Fossil", "The tooth from an unknown fossil");
 
         System.out.println("Which of the fossils would you like to learn more about (Spelling and Spacing is important)?");
+        System.out.println("\na) Bird Fossil \nb) Fish Fossil \nc) Tooth Fossil\n");
 
         Scanner input = new Scanner(System.in);
         String fossilChoice = input.nextLine();
@@ -61,7 +62,7 @@ public class FindingsLists {
         suppliesUsed.add("Food");
         suppliesUsed.add("Water");
 
-        System.out.println("Medicine");
+        System.out.println("\nMedicine");
     }
 
     public static void main(String[] args) throws InterruptedException {

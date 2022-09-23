@@ -27,17 +27,15 @@ public class Mars {
              System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
          }
 
-         Landing = LandingCheck(100);
+          Landing = LandingCheck(100);
          new GuessingGame();
          new MarsExpedition();
          new FindingsLists();
-         //call the landingCheck function
-        //call the
+
     }
 
 
     public static boolean LandingCheck(int Loops) throws InterruptedException {
-        boolean Landing = LandingCheck(100);
 
         for (int i = 0; i <= Loops; i++) {
             if (((i % 3) == 0) && ((i % 5 == 0))) {

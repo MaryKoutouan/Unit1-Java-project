@@ -52,7 +52,7 @@ public class MarsExpedition {
     }
 
     public static void main(String[] args) {
-        new MarsExpedition();
+         new MarsExpedition();
 
     }
 }
